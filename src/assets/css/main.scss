@@ -1,0 +1,14 @@
+.main__inner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    flex-direction: column;
+    color: var(--white);
+
+    > div {
+        font-size: 9vw;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+}
