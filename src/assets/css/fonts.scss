@@ -95,3 +95,16 @@ font-display: swap;
     
     font-display: swap;
 }
+
+@font-face {
+    font-family: "Cafe24 Danjunghae";
+    src: url("../fonts/Cafe24Danjunghae.eot");
+    src: url("../fonts/Cafe24Danjunghae.eot?#iefix")
+        format("embedded-opentype"),
+        url("../fonts/Cafe24Danjunghae.woff2") format("woff2"),
+        url("../fonts/Cafe24Danjunghae.woff") format("woff"),
+        url("../fonts/Cafe24Danjunghae.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
