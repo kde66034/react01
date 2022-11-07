@@ -11,7 +11,7 @@ const Youtube = () => {
     <>
       <Header />
       <Contents>
-        <Title title={["about", "reference api"]} />
+        <Title title={["youtube", "reference api"]} />
         <AboutCont />
         <Contact />
       </Contents>

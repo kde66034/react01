@@ -23,6 +23,19 @@
                 display: inline-block;
                 padding: 15px 20px;
             }
+            span:nth-child(1) {
+                width: 5%;
+            }
+            span:nth-child(2) {
+                width: 20%;
+            }
+            span:nth-child(3) {
+                width: 60%;
+            }
+            span:nth-child(4) {
+                width: 15%;
+                text-align: right;
+            }
             
             .num {
                 flex: 1 1 5%;

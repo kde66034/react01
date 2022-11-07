@@ -17,7 +17,7 @@
         {
             "num": 2,
             "title": "align-content",
-            "desc": "콘텐츠 사이와 콘텐츠 주위 빈 공간을 플렉스 박스'의 교차축 또는 그리드의 블록 축을 따라 배치하는 방식을 결정합니다.",
+            "desc": "콘텐츠 사이와 콘텐츠 주위 빈 공간을 플렉스 박스의 교차축 또는 그리드의 블록 축을 따라 배치하는 방식을 결정합니다.",
             "descBasic": "align-content : start",
             "descApply": "flexbox",
             "descVesrion": "CSS3",

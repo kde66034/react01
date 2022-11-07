@@ -11,7 +11,7 @@ const Unsplash = () => {
     <>
       <Header />
       <Contents>
-        <Title title={["about", "reference api"]} />
+        <Title title={["unsplash", "reference api"]} />
         <AboutCont />
         <Contact />
       </Contents>
