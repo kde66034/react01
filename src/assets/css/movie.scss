@@ -19,12 +19,13 @@
                 height: 80px;
                 margin-bottom: 30px;
                 font-family: var(--font-sub3);
-                
             }
+
             .title {
                 display: inline-block;
                 padding: 5px 0;
             }
+
             .star {
                 background: #fff;
                 color: #000;
@@ -92,59 +93,114 @@
         font-family: var(--font-sub3);
     }
 
-    ul {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin-top: 30px;
+    .pop__inner {
 
-        li {
-            width: 18%;
+        div.swiper {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-bottom: 50px;
             position: relative;
-            transition: transform 0.3s;
-
-            &:hover {
-                transform: translateY(-20px);
+        
+            .swiper-pagination-bullet {
+              background: var(--white);
             }
+            li {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin-top: 30px;
+                transition: transform 0.3s;
+                position: relative;
 
-            .rank__desc {
-                .rank {
-                    position: absolute;
-                    right: 10px;
-                    top: 0;
-                    font-size: 50px;
-                    font-weight: 800;
-                    font-family: var(--font-sub2);
-                    text-shadow: 0 0 10px black, 0 0 10px black;
+                &:hover {
+                    transform: translateY(-20px);
                 }
-            }
 
-            em {
-                display: block;
-                height: 80px;
-                margin-bottom: 30px;
-                font-family: var(--font-sub3);
-            }
-            .title {
-                display: inline-block;
-                padding: 5px 0;
-            }
-            .star {
-                background: #fff;
-                color: #000;
-                position: absolute;
-                left: 10px;
-                top: 10px;
-                width: 30px;
-                height: 30px;
-                border-radius: 100px;
-                text-align: center;
-                line-height: 30px;
-                font-weight: 800;
-                z-index: 1;
+                .rank__desc {
+                    .rank {
+                        position: absolute;
+                        right: 10px;
+                        top: 0;
+                        font-size: 50px;
+                        font-weight: 800;
+                        font-family: var(--font-sub2);
+                        text-shadow: 0 0 10px black, 0 0 10px black;
+                    }
+                }
+
+                em {
+                    display: block;
+                    margin-top: 30px;
+                    height: 80px;
+                    font-family: var(--font-sub3);
+                }
+    
+                .title {
+                    display: inline-block;
+                    // padding: 5px 0;
+                }
+                .star {
+                    background: #fff;
+                    color: #000;
+                    position: absolute;
+                    left: 10px;
+                    top: 10px;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 100px;
+                    text-align: center;
+                    line-height: 30px;
+                    font-weight: 800;
+                    z-index: 1;
+                }  
+
+                .switer-slide {
+                    position: relative;
+        
+                    
+                }
             }
         }
     }
+
+
+    // ul {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     flex-wrap: wrap;
+    //     margin-top: 30px;
+
+    //     li {
+    //         width: 18%;
+    //         position: relative;
+    //         transition: transform 0.3s;
+
+    //         &:hover {
+    //             transform: translateY(-20px);
+    //         }
+
+    //         .rank__desc {
+    //             .rank {
+    //                 position: absolute;
+    //                 right: 10px;
+    //                 top: 0;
+    //                 font-size: 50px;
+    //                 font-weight: 800;
+    //                 font-family: var(--font-sub2);
+    //                 text-shadow: 0 0 10px black, 0 0 10px black;
+    //             }
+    //         }
+
+    //         em {
+    //             display: block;
+    //             height: 80px;
+    //             margin-bottom: 30px;
+    //             font-family: var(--font-sub3);
+    //         }
+            
+    //     }
+    // }
 
     a {
         color: var(--white);

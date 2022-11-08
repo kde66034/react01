@@ -1,7 +1,17 @@
 import React from 'react';
 
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+// import required modules
+import { Autoplay, Navigation, Pagination } from "swiper";
+
 const MovieBox = ({ movie, index }) => {
-    if (index > 9) return;
+    if (index > 19) return;
     return (
         <li>
             <a href={`https://www.themoviedb.org/movie/${movie.id}`}>
@@ -22,13 +32,31 @@ export const PopMovies = ({ movies }) => {
     return (
         <div className='pop__movie'>
             <div className="container">
-                <h2>오늘의 인기영화 TOP 10</h2>
                 <div className="pop__inner">
-                    <ul>
-                        {movies.map((movie, index) => {
+                    <h2>오늘의 인기영화 TOP 10</h2>
+                <Swiper
+                  pagination={true}
+                  // navigation={true}
+                  spaceBetween={30}
+                  slidesPerView={5}
+                  slidesPerGroup={5}
+                  autoplay={{
+                    delay: 5000,
+                    disableOnInteraction: false,
+                  }}
+                  modules={[Pagination, Navigation, Autoplay]}
+                  className="mySwiper"
+                >
+                     
+                {movies.map((movie, index) => {
+                    return (
+                        <SwiperSlide key={index}>
                             return <MovieBox key={index} rank={index} movie={movie} index={index} />
-                        })}
-                    </ul>
+                        </SwiperSlide>
+                    );
+                })}
+                </Swiper>
+                    
                 </div>
             </div>
         </div>
