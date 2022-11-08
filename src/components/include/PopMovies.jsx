@@ -1,7 +1,7 @@
 import React from 'react';
 
 const MovieBox = ({ movie, index }) => {
-    if (index > 4) return;
+    if (index > 9) return;
     return (
         <li>
             <a href={`https://www.themoviedb.org/movie/${movie.id}`}>
@@ -11,7 +11,7 @@ const MovieBox = ({ movie, index }) => {
                     <span className='star'>{movie.vote_average}</span>
                 </em>
                 <div className="rank__desc">
-                    <span className='rank'>{}</span>
+                    <span className='rank'>{index+1}</span>
                 </div>
             </a>
         </li>
@@ -22,11 +22,11 @@ export const PopMovies = ({ movies }) => {
     return (
         <div className='pop__movie'>
             <div className="container">
-                <h2>오늘의 인기영화</h2>
+                <h2>오늘의 인기영화 TOP 10</h2>
                 <div className="pop__inner">
                     <ul>
                         {movies.map((movie, index) => {
-                            return <MovieBox key={index} movie={movie} index={index} />
+                            return <MovieBox key={index} rank={index} movie={movie} index={index} />
                         })}
                     </ul>
                 </div>

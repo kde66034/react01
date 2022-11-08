@@ -8,6 +8,11 @@
         li {
             width: 23%;
             position: relative;
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: translateY(-20px);
+            }
 
             em {
                 display: block;
@@ -81,23 +86,38 @@
 .pop__movie {
     h2 {
         color: var(--white);
-        font-size: 40px;
-        text-indent: -9999px;
+        font-size: 30px;
         height: 0;
+        display: inline-block;
+        font-family: var(--font-sub3);
     }
 
     ul {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin-top: 30px;
 
         li {
             width: 18%;
             position: relative;
+            transition: transform 0.3s;
 
-            // &:hover {
-                
-            // }
+            &:hover {
+                transform: translateY(-20px);
+            }
+
+            .rank__desc {
+                .rank {
+                    position: absolute;
+                    right: 10px;
+                    top: 0;
+                    font-size: 50px;
+                    font-weight: 800;
+                    font-family: var(--font-sub2);
+                    text-shadow: 0 0 10px black, 0 0 10px black;
+                }
+            }
 
             em {
                 display: block;
@@ -130,3 +150,4 @@
         color: var(--white);
     }
 }
+
