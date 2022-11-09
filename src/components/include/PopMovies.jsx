@@ -51,7 +51,7 @@ export const PopMovies = ({ movies }) => {
                 {movies.map((movie, index) => {
                     return (
                         <SwiperSlide key={index}>
-                            return <MovieBox key={index} rank={index} movie={movie} index={index} />
+                            <MovieBox key={index} rank={index} movie={movie} index={index} />
                         </SwiperSlide>
                     );
                 })}
