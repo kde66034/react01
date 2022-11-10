@@ -14,8 +14,8 @@ const Movie = () => {
   const [movies, setMovies] = useState([]);
   const [pop, setPop] = useState([]);
 
-  const search = (query) => {
-    fetch(`https://api.themoviedb.org/3/search/movie?api_key=657bc92cb91cb42e311f58ddd303bff6&query=${query}&page=1&language=ko-KR`)
+  const search = async (query) => {
+    await fetch(`https://api.themoviedb.org/3/search/movie?api_key=657bc92cb91cb42e311f58ddd303bff6&query=${query}&page=1&language=ko-KR`)
     .then((response) => response.json())
     .then((result) => setMovies(result.results))
     .catch((error) => console.log(error))
