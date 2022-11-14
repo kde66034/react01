@@ -37,7 +37,7 @@ export const PopMovies = ({ movies }) => {
         <div className='pop__movie'>
             <div className="container">
                 <div className="pop__inner">
-                    <h2>오늘의 인기영화 TOP 10</h2>
+                    <h2>오늘의 인기영화 TOP 20</h2>
                 <Swiper
                 //   pagination={true}
                 //   // navigation={true}
